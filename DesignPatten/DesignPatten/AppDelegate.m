@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  AppHook
+//  DesignPatten
 //
-//  Created by Rhino on 2018/11/28.
+//  Created by Rhino on 2018/11/29.
 //  Copyright © 2018 Rhino. All rights reserved.
 //
 
@@ -16,17 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receive:) name:@"NSNotification" object:nil];;
-    
-    
+    // Override point for customization after application launch.
     return YES;
-}
-
-- (void)receive:(NSNotification *)notification{
-    
-    NSLog(@"%@",notification);
 }
 
 
